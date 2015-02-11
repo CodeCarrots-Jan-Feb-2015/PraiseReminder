@@ -1,0 +1,21 @@
+Tools:
+HTML, CSS, Python - Kivy library, or Javascript backend
+
+Features - 
+First Stage: HTML/CSS/Javascript/Python
+Random ~demo praise provided - show functionality
+Log In (accounts)
+Text input
+Photo uploading
+One button refresh yield single phrase/photo randomly
+Alt text (hover) to input context or comments
+Edits
+Stretch
+Share/publish to other social networks
+Mobile version of site (responsive)
+Mass Edits
+
+Second Stage: Mobile App - Python/Kivy
+Sync functionality with website ^
+One button (shake) refresh - push text/photo
+Connecting accounts - allow for giving praise between accounts
