@@ -12,12 +12,18 @@ body {
     background-color: #ffffff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
 }
+
+a:hover {
+    cursor: pointer;
+}
 #plus_icon {
     max-width: 100%;
     float:right;
     height: auto;
     margin: .25em;
     cursor: default;
+}
+#plus_icon:hover {cursor: pointer;
 }
 #pencil_icon {
     max-width: 100%;
@@ -26,6 +32,9 @@ body {
     margin: .25em;
     cursor: default;
 }
+
+/*#pencil_icon:hover {cursor: pointer;}*/
+
 #trash_icon {
     max-width: 100%;
     float:right;
@@ -33,6 +42,7 @@ body {
     margin: .25em;
     cursor: default;
 }
+
 h1 {
     font-family: 'Droid Sans', sans-serif;
     text-align: center;
@@ -55,7 +65,7 @@ h3 {
 .praise-box {
     margin-top: 50px;
     margin-right: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-left: 100px;
     padding: 10px 50px 10px 50px;
     border: 5px solid #efdc62;
@@ -106,7 +116,7 @@ samp {
         filter: grayscale(0%);
     }
 }
-#refresh {
+#refresh, #submit {
     background-color: #ed7450;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ed7450), color-stop(50%, #ed7450), color-stop(50%, #ed7450), color-stop(100%, #ed7450));
     background-image: -webkit-linear-gradient(top, #ed7450 0%, #ed7450 50%, #ed7450 50%, #ed7450 100%);
@@ -124,4 +134,27 @@ samp {
     text-align: center;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
     width: 150px;
+}
+
+
+a {text-decoration: none; }
+
+form {
+    text-align: center;
+}
+textarea {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid #efdc62;
+    border-radius: 2em;
+}
+.enter {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 2em;
+    color:#ed7450;
+}
+
+#refresh, #submit:hover {
+    cursor:pointer;
 }
