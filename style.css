@@ -1,5 +1,8 @@
 html {
     background-color: #f4f4f4;
+<<<<<<< HEAD
+}
+=======
    
 }
 
@@ -16,19 +19,52 @@ color: #103098;
 #daybreak{
     color: #efdc62;}
 
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
 body {
     margin: 0 auto;
     padding: 2em 2em 4em;
     max-width: 800px;
+<<<<<<< HEAD
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+=======
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
     font-size: 16px;
     line-height: 1.5em;
     color: #545454;
     background-color: #ffffff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
 }
+<<<<<<< HEAD
+#plus_icon {
+    max-width: 100%;
+    float:right;
+    height: auto;
+    margin: .25em;
+    cursor: default;
+}
+#pencil_icon {
+    max-width: 100%;
+    float:right;
+    height: auto;
+    margin: .25em;
+    cursor: default;
+}
+#trash_icon {
+    max-width: 100%;
+    float:right;
+    height: auto;
+    margin: .25em;
+    cursor: default;
+}
+h1 {
+    font-family: 'Droid Sans', sans-serif;
+    text-align: center;
+    letter-spacing: 6px;
+=======
 
 h1 {
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
     color: #222;
     font-size: 100px;
     font-weight: 600;
@@ -37,16 +73,55 @@ h1 {
 }
 
 h3 {
+<<<<<<< HEAD
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1em;
+}
+
+.praise-box {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    padding: 10px 50px 10px 50px;
+    border: 5px solid #efdc62;
+    border-radius: 2em;
+    overflow: auto;
+}
+#night {
+    color: #103098;
+    font-size: 25px;
+}
+#mid-morning {
+    color: #ed7450;
+    font-size: 30px;
+    
+}
+#daybreak {
+    color: #efdc62;
+    font-size: 40px;
+    
+=======
     
 }
 
 a {
     color: #0083e8;
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
 }
 
 b, strong {
     font-weight: 600;
 }
+<<<<<<< HEAD
+samp {
+    display: none;
+}
+.refresh {
+=======
 
 samp {
     display: none;
@@ -57,12 +132,18 @@ img {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
     border: 10px solid rgba(0, 0, 0, 0.12);
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
     border-radius: 4px;
     display: block;
     margin: 1.3em auto;
     max-width: 95%;
+<<<<<<< HEAD
+    text-align: center;
+}
+=======
 }
 
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
 @-webkit-keyframes colorize {
     0% {
         -webkit-filter: grayscale(100%);
@@ -71,7 +152,10 @@ img {
         -webkit-filter: grayscale(0%);
     }
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
 @keyframes colorize {
     0% {
         filter: grayscale(100%);
@@ -80,4 +164,26 @@ img {
         filter: grayscale(0%);
     }
 }
+<<<<<<< HEAD
+#refresh {
+    background-color: #ed7450;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ed7450), color-stop(50%, #ed7450), color-stop(50%, #ed7450), color-stop(100%, #ed7450));
+    background-image: -webkit-linear-gradient(top, #ed7450 0%, #ed7450 50%, #ed7450 50%, #ed7450 100%);
+    background-image: -moz-linear-gradient(top, #ed7450 0%, #ed7450 50%, #ed7450 50%, #ed7450 100%);
+    background-image: -ms-linear-gradient(top, #ed7450 0%, #ed7450 50%, #ed7450 50%, #ed7450 100%);
+    background-image: -o-linear-gradient(top, #ed7450 0%, #ed7450 50%, #ed7450 50%, #ed7450 100%);
+    background-image: linear-gradient(top, #ed7450 0%, #ed7450 50%, #ed7450 50%, #ed7450 100%);
+    border: 1px solid #ed7450;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255, 115, 100, 0.4), 0 1px 3px #ed7450;
+    box-shadow: inset 0 0 0 1px rgba(255, 115, 100, 0.4), 0 1px 3px #ed7450;
+    color: #ffffff;
+    font: bold 20px/1"helvetica neue", helvetica, arial, sans-serif;
+    padding: 12px 0 14px 0;
+    text-align: center;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8);
+    width: 150px;
+}
+=======
 
+>>>>>>> e23323827e3248c3ecc41bd26e7046518815c1df
