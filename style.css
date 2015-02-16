@@ -148,6 +148,11 @@ textarea {
     padding: 10px 10px 10px 10px;
     border: 5px solid #efdc62;
     border-radius: 2em;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	width: 100%;
 }
 .enter {
     font-family: "Nothing You Could Do", cursive;
