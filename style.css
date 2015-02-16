@@ -16,6 +16,19 @@ body {
 a:hover {
     cursor: pointer;
 }
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
 #plus_icon {
     max-width: 100%;
     float:right;
@@ -138,6 +151,11 @@ samp {
 
 
 a {text-decoration: none; }
+
+
+    
+}
+
 
 form {
     text-align: center;
