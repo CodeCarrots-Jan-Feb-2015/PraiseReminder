@@ -157,6 +157,13 @@ textarea {
 .enter {
     font-family: "Nothing You Could Do", cursive;
     font-size: 2em;
+    color:#103098;
+    
+}
+    
+.edit {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 2em;
     color:#ed7450;
 }
 
