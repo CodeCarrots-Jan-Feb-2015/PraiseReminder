@@ -9,4 +9,7 @@ def add(request):
 def delete(request):
     return render (request, "delete.html")
 
+def delete(request):
+    return render (request, "edit.html")
+
 # Create your views here.
