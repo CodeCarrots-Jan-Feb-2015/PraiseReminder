@@ -7,12 +7,14 @@
         <script src="javascript/script.js"></script>
     </head>
     <body>
+        
         <a href="index.html"><h1> revIver </h1></a>
-            <form>
+            <form onsubmit="validateForm();">
                 <h3 class="enter">Please enter your text here:</h3>
-                <textarea rows="30" cols="80"> </textarea>
+                <textarea id="text" rows="30" cols="80"> </textarea>
                 <br>
-                <input id="submit" type="submit" onclick="submission()" value="Submit" required/>
+                <input id ="submit" type = "submit" value="Submit">
+                
             </form>
     </body>
 </html>
