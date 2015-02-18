@@ -1,9 +1,12 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from backend.forms import PraiseForm
+from backend.models import Praise 
+import random
 
 def home(request):
-    return render (request, "home.html")
+	praise = random.choice(Praise.objects.filter(user=request.user))
+   	return render (request, "home.html",{'praise':praise})
 
 def delete(request):
     return render (request, "delete.html")
