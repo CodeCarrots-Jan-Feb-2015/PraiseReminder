@@ -6,5 +6,7 @@ def home(request):
 
 def add(request):
     return render (request, "add.html")
+def delete(request):
+    return render (request, "delete.html")
 
 # Create your views here.
