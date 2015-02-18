@@ -151,6 +151,7 @@ samp {
 
 
 a {text-decoration: none; }
+#pencil_icon, #trash_icon:hover {cursor: pointer;}
 
 form {
     text-align: center;
