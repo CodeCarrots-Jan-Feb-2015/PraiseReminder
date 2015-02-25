@@ -91,15 +91,12 @@ h3 {
 }
 #mid-morning {
     color: #ed7450;
-    font-size: 30px;
-    
+    font-size: 30px;    
 }
 #daybreak {
     color: #efdc62;
     font-size: 40px;
-    
 }
-
 b, strong {
     font-weight: 600;
 }
@@ -149,10 +146,10 @@ samp {
     width: 150px;
 }
 
-
-a {text-decoration: none; }
-#pencil_icon, #trash_icon:hover {cursor: pointer;}
-
+a {text-decoration: none;
+}
+#pencil_icon, #trash_icon:hover {
+    cursor: pointer;}
 form {
     text-align: center;
 }
@@ -187,8 +184,6 @@ textarea {
 
 #delete {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-
+    font-size: 18px;
+    margin-left: -1em;
 }
