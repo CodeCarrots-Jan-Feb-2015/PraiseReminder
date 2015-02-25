@@ -5,8 +5,13 @@ from backend.models import Praise
 import random
 
 def home(request):
-	praise = random.choice(Praise.objects.filter(user=request.user))
-   	return render (request, "home.html",{'praise': praise})
+	if request.user.is_authenticated ():
+	
+		praise = random.choice(Praise.objects.filter(user=request.user))
+   		return render (request, "home.html",{'praise': praise})
+
+   	else:
+   		return redirect ("/admin/login/?next=/")
 
 def delete(request):
     return render (request, "delete.html")
