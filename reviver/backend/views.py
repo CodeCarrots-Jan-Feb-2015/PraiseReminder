@@ -6,13 +6,14 @@ import random
 
 def home(request):
 	praise = random.choice(Praise.objects.filter(user=request.user))
-   	return render (request, "home.html",{'praise':praise})
+   	return render (request, "home.html",{'praise': praise})
 
 def delete(request):
     return render (request, "delete.html")
 
-def edit(request):
-    return render (request, "edit.html")
+#def edit(request):
+	#edit = 
+    #return render (request, "edit.html".{'praise': praise})
 
 def add(request):
 
