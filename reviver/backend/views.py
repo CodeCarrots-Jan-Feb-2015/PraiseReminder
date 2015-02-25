@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from backend.forms import PraiseForm
 from backend.models import Praise 
 import random
+from django.views.generic.edit import UpdateView
 
 def home(request):
 	if request.user.is_authenticated ():
@@ -16,15 +17,27 @@ def home(request):
 def delete(request, praise_id):    
 	praise = Praise.objects.get(id=praise_id)
 	praise.delete()
-	return render(request, "delete.html", {'praise': praise.content})
-
-
+	return render(request, "delete.html", {'praise': praise})
 
 #edit a praise
-#def edit(request, praise_id):	
-	#praise = Praise.objects.get(id=praise_id)
+def edit(request, praise_id):	
+	praise = Praise.objects.get(id=praise_id)
+	#process form data is a 'POST'
+	#show a form is 'GET'
+	if request.method == 'POST':
+		form = PraiseForm(request.POST,instance=praise)
 
-	#return render(request, "edit.html", {pr})
+		if form.is_valid():
+			#save the new category to the database.
+			form.save()
+			#user will be shown the homepage
+			return redirect ("/")
+		else:
+			#prints that the form was not pushed
+			print form.errors
+	else: #If the request was not a POST, the form will display
+		form = PraiseForm(instance=praise)
+	return render(request, "edit.html", {'form':form})
 
 
 def add(request):

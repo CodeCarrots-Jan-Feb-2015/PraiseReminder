@@ -15,15 +15,22 @@
     <body>
         
         <a href="/"><h1> revIver </h1></a>
-            <p id="delete">Your praise has been deleted.</p>
-        <div class="praise-box">
-            
-            <p>
-            {{praise.content}}
-            </p>
-        </div>
-        <div class="refresh">
-            <button onclick="window.location.href='/'" id="refresh">Home</button>
-        </div>
+            <form id="add" method="post" action="/edit/{{form.instance.id}}">
+
+                {% csrf_token %}
+                {% for hidden in form.hidden_fields %}
+                    {{ hidden }}
+                {% endfor %}
+
+                {% for field in form.visible_fields %}
+    
+                {{ field.errors }}
+                    {{ field.help_text }}
+                {{ field }}
+                {% endfor %}
+            <br>
+            <input id ="submit" type = "submit" value="Submit">
+                
+            </form>
     </body>
 </html>
