@@ -12,16 +12,22 @@ def home(request):
 
    	else:
    		return redirect ("/admin/login/?next=/")
+#delete a praise
+def delete(request, praise_id):    
+	praise = Praise.objects.get(id=praise_id)
+	praise.delete()
+	return render(request, "delete.html", {'praise': praise.content})
 
-def delete(request):
-    return render (request, "delete.html")
 
-#def edit(request):
-	#edit = 
-    #return render (request, "edit.html".{'praise': praise})
+
+#edit a praise
+#def edit(request, praise_id):	
+	#praise = Praise.objects.get(id=praise_id)
+
+	#return render(request, "edit.html", {pr})
+
 
 def add(request):
-
 	#process form data is a 'POST'
 	#show a form is 'GET'
 	if request.method == 'POST':
