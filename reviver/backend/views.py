@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from backend.forms import PraiseForm
 from backend.models import Praise 
@@ -30,7 +30,7 @@ def add(request):
 
 
 			#user will be shown the homepage
-			return home(request)
+			return redirect ("/")
 
 		else:
 			#prints that the form was not pushed
