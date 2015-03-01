@@ -1,6 +1,7 @@
 html {
     background-color: #f4f4f4;
 }
+
 body {
     margin: 0 auto;
     padding: 2em 2em 4em;
@@ -36,8 +37,7 @@ a:active {
     margin: .25em;
     cursor: default;
 }
-#plus_icon:hover {cursor: pointer;
-}
+
 #pencil_icon {
     max-width: 100%;
     float:right;
@@ -46,14 +46,16 @@ a:active {
     cursor: default;
 }
 
-/*#pencil_icon:hover {cursor: pointer;}*/
-
 #trash_icon {
     max-width: 100%;
     float:right;
     height: auto;
     margin: .25em;
     cursor: default;
+}
+
+#plus_icon:hover, #pencil_icon:hover, #trash_icon:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -85,24 +87,30 @@ h3 {
     border-radius: 2em;
     overflow: auto;
 }
+
 #night {
     color: #103098;
     font-size: 25px;
 }
+
 #mid-morning {
     color: #ed7450;
     font-size: 30px;    
 }
+
 #daybreak {
     color: #efdc62;
     font-size: 40px;
 }
+
 b, strong {
     font-weight: 600;
 }
+
 samp {
     display: none;
 }
+
 .refresh {
     border-radius: 4px;
     display: block;
@@ -110,6 +118,7 @@ samp {
     max-width: 95%;
     text-align: center;
 }
+
 @-webkit-keyframes colorize {
     0% {
         -webkit-filter: grayscale(100%);
@@ -118,6 +127,7 @@ samp {
         -webkit-filter: grayscale(0%);
     }
 }
+
 @keyframes colorize {
     0% {
         filter: grayscale(100%);
@@ -126,6 +136,7 @@ samp {
         filter: grayscale(0%);
     }
 }
+
 #refresh, #submit {
     background-color: #ed7450;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ed7450), color-stop(50%, #ed7450), color-stop(50%, #ed7450), color-stop(100%, #ed7450));
@@ -148,11 +159,11 @@ samp {
 
 a {text-decoration: none;
 }
-#pencil_icon, #trash_icon:hover {
-    cursor: pointer;}
+
 form {
     text-align: center;
 }
+
 textarea {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -165,11 +176,11 @@ textarea {
 
 	width: 100%;
 }
+
 .enter {
     font-family: "Nothing You Could Do", cursive;
     font-size: 2em;
     color:#103098;
-    
 }
     
 .edit {
@@ -186,4 +197,6 @@ textarea {
     text-align: center;
     font-size: 18px;
     margin-left: -1em;
+    color: red;
+    text-decoration: bold;
 }
